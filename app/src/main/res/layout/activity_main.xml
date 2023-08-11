@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill Amount:"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/text_amount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/text_language"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter language code"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <EditText
+    android:id="@+id/text_currency"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:hint="Enter Currency"
+    android:textColor="@color/colorAccent"
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:text=""
+    android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Phone"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text=""
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Email"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text=""
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:visibility="visible"
+        android:layout_weight="1"
+        android:onClick="sendMessage"/>
+    </LinearLayout>
+
+</LinearLayout>
